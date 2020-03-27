@@ -27,7 +27,7 @@ class _PriceScreenState extends State<PriceScreen> {
       onChanged: (value) {
         setState(() {
           selectedCurrency = value;
-          print(selectedCurrency);
+          // print(selectedCurrency);
           getData();
         });
       },
@@ -43,7 +43,7 @@ class _PriceScreenState extends State<PriceScreen> {
       backgroundColor: Colors.lightBlue,
       itemExtent: 32.0,
       onSelectedItemChanged: (selectedIndex) {
-        print(currenciesList[selectedIndex]);
+        // print(currenciesList[selectedIndex]);
         setState(() {
           selectedCurrency = currenciesList[selectedIndex];
           getData();
